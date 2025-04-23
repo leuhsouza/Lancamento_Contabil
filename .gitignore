@@ -1,0 +1,15 @@
+# Pastas de build
+bin/
+obj/
+
+# Configurações do Visual Studio
+.vs/
+*.user
+*.suo
+
+# Arquivos de log
+*.log
+
+# Outras configurações temporárias
+*.db
+*.DS_Store
