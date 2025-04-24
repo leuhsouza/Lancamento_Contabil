@@ -1,11 +1,15 @@
-﻿Lancamento lancamento1 = new Lancamento();
+﻿
+Lancamento lancamento1 = new Lancamento();
 lancamento1.Debito_Credito = "D";
 lancamento1.Valor = 150;
+lancamento1.Complemento = "Valor ref: Compra de imobilizado";
 
-Console.WriteLine($"C/D? {lancamento1.Debito_Credito} R$: {lancamento1.Valor}");
 
 Lancamento lancamento2 = new Lancamento();
 lancamento2.Debito_Credito = "C";
 lancamento2.Valor = 150;
+lancamento2.Complemento = "Valor ref: venda de alguma coisa";
 
-Console.WriteLine($"C/D? {lancamento2.Debito_Credito} R$: {lancamento2.Valor}");
+
+lancamento1.ExibirLancamento();
+lancamento2.ExibirLancamento();
