@@ -7,6 +7,18 @@ public class Lancamento
         public int Valor;
         public int Historico;
         public string Complemento;
+        private bool conciliado;
+
+
+    public void escreveconcilado(bool value)
+    {
+        conciliado = value;
+    }
+
+    public bool Leconciliado()
+    {
+        return conciliado;
+    }
 
     public void ExibirLancamento()
     {
