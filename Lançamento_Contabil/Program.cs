@@ -3,16 +3,15 @@ Lancamento lancamento1 = new Lancamento();
 lancamento1.Debito_Credito = "D";
 lancamento1.Valor = 150;
 lancamento1.Complemento = "Valor ref: Compra de imobilizado";
-lancamento1.escreveconcilado(true);
-Console.WriteLine(lancamento1.Leconciliado());
+lancamento1.Conciliado = true;
 
 
 Lancamento lancamento2 = new Lancamento();
 lancamento2.Debito_Credito = "C";
 lancamento2.Valor = 150;
 lancamento2.Complemento = "Valor ref: venda de alguma coisa";
-lancamento2.escreveconcilado(false);
-Console.WriteLine(lancamento2.Leconciliado());
+lancamento2.Conciliado = false;
+
 
 
 lancamento1.ExibirLancamento();
