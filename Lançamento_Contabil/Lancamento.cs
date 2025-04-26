@@ -11,11 +11,13 @@ public class Lancamento
 
         public string Data { get; set; }
 
+        public string DescricaoResumida =>  $"{Data} {Debito_Credito} {Historico} {Complemento} {Valor}";
+
 
 
     public void ExibirLancamento()
     {
-        Console.WriteLine($"{Debito_Credito} {Valor} {Complemento}");
+        Console.WriteLine(DescricaoResumida);
     }
 
     }
