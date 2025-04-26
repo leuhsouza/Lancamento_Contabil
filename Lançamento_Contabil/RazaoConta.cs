@@ -2,7 +2,7 @@
 {
     private List<Lancamento> lancamentos = new List<Lancamento>();
     public int RazaoConta { get; set; }
-    public int TotalConta { get; set; }
+    public int TotalConta => lancamentos.Sum(m => m.Valor);
 
     public void AdicionarLancamento (Lancamento lancamento)
     {
@@ -16,6 +16,7 @@
         {
             Console.WriteLine($"{lancamento.DescricaoResumida}\n");
         }
+        Console.WriteLine($"\nTotal da Conta R$: {TotalConta}");
     }
 
 }
